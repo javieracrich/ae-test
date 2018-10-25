@@ -1,0 +1,6 @@
+<app-header [title]="title"></app-header>
+<main>
+  <app-control-panel (checkSynonym)="onCheckSyn()" (toggleUnderlineStyle)="onToggleUnderlineStyle()" (toggleItalicsStyle)="onToggleItalicsStyle()"
+    (toggleBoldStyle)="onToggleBoldStyle()"></app-control-panel>
+  <app-file (onTextSelected)="onTextSelected($event)"></app-file>
+</main>
